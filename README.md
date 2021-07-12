@@ -1,1 +1,1 @@
-# TEMP
+awk 'function repl(s,f,t,v) { return substr(s,1,f-1) sprintf("%-*s", t-f+1, v) substr(s,t+1) } {if($2==currentvendrid && substr($0, '$bill_ind_disp)=="Y") repl($0, '$ofc_ind_disp',1,"Y") }1' SRC_FILES_DIR_PATH/CIGNA.CBHAN.PROV.TXT > tmp && mv tmp SRC_FILES_DIR_PATH/CIGNA.CBHAN.PROV.TXT
